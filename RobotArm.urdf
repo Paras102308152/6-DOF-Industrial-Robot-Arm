@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="RobotArm">
+    <link name="base_link">
+        <inertial>
+            <origin xyz="0.0015217904411313787 0.0015217904444057746 0.036272927767695785" rpy="0.0 0.0 0.0" />
+            <mass value="42.45245681924777" />
+            <inertia ixx="0.2653839660900067" iyy="0.26538395965383593" izz="0.4895554613489011" ixy="0.006283583483754739" iyz="-0.00015846757711144698" ixz="-0.0001584675772914588" />
+        </inertial>
+        <visual name="base_link_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="base_link_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="JAW-1">
+        <inertial>
+            <origin xyz="-0.059051777544834025 -0.003956871030062605 0.08482420632687392" rpy="0.0 -0.0 0.0" />
+            <mass value="18.760512868368995" />
+            <inertia ixx="0.09741414971610907" iyy="0.1938149527715185" izz="0.1323821001190197" ixy="-0.0048773027807220495" iyz="0.004423069388585509" ixz="0.07421248561418808" />
+        </inertial>
+        <visual name="JAW-1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="1.0078231431798093e-15 -1.360023205165815e-15 -1.972152263052523e-31" />
+            <geometry>
+                <mesh filename="meshes/JAW-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="JAW-1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="1.0078231431798093e-15 -1.360023205165815e-15 -1.972152263052523e-31" />
+            <geometry>
+                <mesh filename="meshes/JAW-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="JAW-2">
+        <inertial>
+            <origin xyz="0.10420414843442762 0.09273624122412522 -0.01535356751728322" rpy="0.0 -4.861730685829017e-63 0.0" />
+            <mass value="7.193807068318384" />
+            <inertia ixx="0.0697320587789727" iyy="0.07250050509203435" izz="0.1400452650203105" ixy="-0.06630966086625482" iyz="-0.0003644095519130529" ixz="-0.0007109531955247667" />
+        </inertial>
+        <visual name="JAW-2_visual">
+            <origin xyz="-8.526512829121202e-16 -4.973799150320702e-16 -1.4210854715202004e-16" rpy="3.14159265358979 -2.078458773860433e-15 -2.3561944901923426" />
+            <geometry>
+                <mesh filename="meshes/JAW-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="JAW-2_collision">
+            <origin xyz="-8.526512829121202e-16 -4.973799150320702e-16 -1.4210854715202004e-16" rpy="3.14159265358979 -2.078458773860433e-15 -2.3561944901923426" />
+            <geometry>
+                <mesh filename="meshes/JAW-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="JAW-3">
+        <inertial>
+            <origin xyz="-0.04367058107319698 0.026369578301140697 -0.0399378660975178" rpy="0.0 -0.0 0.0" />
+            <mass value="11.206253721709784" />
+            <inertia ixx="0.014575733433691784" iyy="0.06499981797961008" izz="0.06248065166510986" ixy="0.0007979009348865231" iyz="0.0009676800156149245" ixz="-0.0024773268338708627" />
+        </inertial>
+        <visual name="JAW-3_visual">
+            <origin xyz="0.050000003415290005 0.027999999999998908 -0.04500000341529159" rpy="3.1415926535897922 -2.5257573810222244e-15 -3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/JAW-3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="JAW-3_collision">
+            <origin xyz="0.050000003415290005 0.027999999999998908 -0.04500000341529159" rpy="3.1415926535897922 -2.5257573810222244e-15 -3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/JAW-3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="JAW-4">
+        <inertial>
+            <origin xyz="3.11483219661568e-08 1.5329576763534192e-09 0.06951266745583638" rpy="0.0 -0.0 0.0" />
+            <mass value="4.567789316926663" />
+            <inertia ixx="0.012071334922003712" iyy="0.010882188979433938" izz="0.004447737146028086" ixy="-1.9636714476689576e-10" iyz="5.5265288873007634e-11" ixz="-3.8130654189671986e-10" />
+        </inertial>
+        <visual name="JAW-4_visual">
+            <origin xyz="3.4152907346651773e-09 1.127986593019159e-15 0.00499999658471026" rpy="-3.1415926535897922 1.5707963267948941 0" />
+            <geometry>
+                <mesh filename="meshes/JAW-4.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="JAW-4_collision">
+            <origin xyz="3.4152907346651773e-09 1.127986593019159e-15 0.00499999658471026" rpy="-3.1415926535897922 1.5707963267948941 0" />
+            <geometry>
+                <mesh filename="meshes/JAW-4.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="JAW-5">
+        <inertial>
+            <origin xyz="-0.0450657066794081 0.03781461730391307 -0.01734039764534853" rpy="0.0 -0.0 0.0" />
+            <mass value="2.62681299738473" />
+            <inertia ixx="0.0022435494345127704" iyy="0.0023913265325336552" izz="0.0027694604770703846" ixy="0.00041904278468096745" iyz="1.5853611072071117e-05" ixz="-1.8893597950750407e-05" />
+        </inertial>
+        <visual name="JAW-5_visual">
+            <origin xyz="-0.03217386319570714 0.02699707619154431 -0.017499999999998836" rpy="2.268928027592631 1.570796326794894 0" />
+            <geometry>
+                <mesh filename="meshes/JAW-5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="JAW-5_collision">
+            <origin xyz="-0.03217386319570714 0.02699707619154431 -0.017499999999998836" rpy="2.268928027592631 1.570796326794894 0" />
+            <geometry>
+                <mesh filename="meshes/JAW-5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="JAW-6">
+        <inertial>
+            <origin xyz="-0.012608493570605788 0.01057978064402576 1.2390088954816747e-15" rpy="0.0 -0.0 0.0" />
+            <mass value="0.6020102134527638" />
+            <inertia ixx="0.00031065283030004553" iyy="0.0003085235884593418" izz="0.00025554011196277093" ixy="-6.037765270472395e-06" iyz="-8.815470637892215e-19" ixz="-3.4211388289180104e-49" />
+        </inertial>
+        <visual name="JAW-6_visual">
+            <origin xyz="-4.4776079022312845e-09 2.096388413974637e-09 1.225686219186173e-15" rpy="-1.570796326794898 -1.176339546246898e-15 2.4434609527920585" />
+            <geometry>
+                <mesh filename="meshes/JAW-6.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="JAW-6_collision">
+            <origin xyz="-4.4776079022312845e-09 2.096388413974637e-09 1.225686219186173e-15" rpy="-1.570796326794898 -1.176339546246898e-15 2.4434609527920585" />
+            <geometry>
+                <mesh filename="meshes/JAW-6.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="JAW-7">
+        <inertial>
+            <origin xyz="-0.03802417507349027 0.010411415170170652 -0.04365473530939817" rpy="0.0 -0.0 0.0" />
+            <mass value="0.3214041464970563" />
+            <inertia ixx="0.0002039416488639964" iyy="0.0004311681104933045" izz="0.000275819197976597" ixy="1.9876299646566505e-05" iyz="1.6678195702604298e-05" ixz="-0.00020381891876051356" />
+        </inertial>
+        <visual name="JAW-7_visual">
+            <origin xyz="-0.03437319775741671 -0.025025468507684393 -0.04059120159004429" rpy="-0.34906585039886445 0.8726646259971609 1.9431004641056856e-15" />
+            <geometry>
+                <mesh filename="meshes/JAW-7.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="JAW-7_collision">
+            <origin xyz="-0.03437319775741671 -0.025025468507684393 -0.04059120159004429" rpy="-0.34906585039886445 0.8726646259971609 1.9431004641056856e-15" />
+            <geometry>
+                <mesh filename="meshes/JAW-7.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="JAW-8">
+        <inertial>
+            <origin xyz="-0.03802417507349034 -0.010411415170168083 -0.043654735309398444" rpy="0.0 -0.0 0.0" />
+            <mass value="0.3214041464970563" />
+            <inertia ixx="0.0002039416488639964" iyy="0.00043116811049334614" izz="0.00027581919797659005" ixy="-1.9876299646567373e-05" iyz="-1.6678195702603972e-05" ixz="-0.00020381891876049968" />
+        </inertial>
+        <visual name="JAW-8_visual">
+            <origin xyz="-0.034373197757416846 0.025025468507687016 -0.04059120159004444" rpy="-0.34906585039886856 -0.8726646259971609 -3.1415926535897913" />
+            <geometry>
+                <mesh filename="meshes/JAW-7.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="JAW-8_collision">
+            <origin xyz="-0.034373197757416846 0.025025468507687016 -0.04059120159004444" rpy="-0.34906585039886856 -0.8726646259971609 -3.1415926535897913" />
+            <geometry>
+                <mesh filename="meshes/JAW-8.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="base_link_Revolute-1" type="continuous">
+        <origin xyz="0.0 0.0 0.079" rpy="0.0 -0.0 0.0" />
+        <parent link="base_link" />
+        <child link="JAW-1" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="JAW-1_Revolute-2" type="revolute">
+        <origin xyz="-0.15 0.02 0.15999999999999998" rpy="1.5707963267948966 1.9721522630525295e-31 3.313564005621874e-47" />
+        <parent link="JAW-1" />
+        <child link="JAW-2" />
+        <axis xyz="-3.313564005621874e-47 0.0 0.9999999999999999" />
+        <limit lower="0.0" upper="1.570796" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="JAW-2_Revolute-3" type="revolute">
+        <origin xyz="0.24748736999999998 0.24748736999999998 0.02" rpy="1.5707963267948966 -3.3135640056218744e-47 2.9582283945787943e-31" />
+        <parent link="JAW-2" />
+        <child link="JAW-3" />
+        <axis xyz="0.0 1.0 -3.944304526105059e-31" />
+        <limit lower="-0.349066" upper="0.349066" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="JAW-3_Revolute-4" type="revolute">
+        <origin xyz="-0.24600000000000002 0.027999999999999997 -0.045" rpy="-3.141592653589793 1.5707963267948966 0" />
+        <parent link="JAW-3" />
+        <child link="JAW-4" />
+        <axis xyz="0.0 1.0472105744975423e-32 -1.0" />
+        <limit lower="0.0" upper="3.141593" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="JAW-4_Revolute-5" type="revolute">
+        <origin xyz="0.0 0.017499999999999998 0.115" rpy="-1.5707963267948966 1.5707963267948966 0" />
+        <parent link="JAW-4" />
+        <child link="JAW-5" />
+        <axis xyz="-5.4654962194789655e-33 -1.9721522630525295e-31 -1.0" />
+        <limit lower="-0.523599" upper="0.523599" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="JAW-5_Revolute-6" type="revolute">
+        <origin xyz="-0.07200816999999997 0.06042202999999994 -0.017499999999999998" rpy="-5.551115123125802e-17 5.4654962194789655e-33 3.944304526105059e-31" />
+        <parent link="JAW-5" />
+        <child link="JAW-6" />
+        <axis xyz="0.766044 -0.642788 0.0" />
+        <limit lower="0.0" upper="6.283185" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="JAW-6_Revolute-8" type="revolute">
+        <origin xyz="-0.03098187000000003 0.014248210000000015 -0.04080951" rpy="1.5707963267948968 -1.9721522630525293e-31 -3.944304526105059e-31" />
+        <parent link="JAW-6" />
+        <child link="JAW-7" />
+        <axis xyz="-0.642788 -4.289186625258633e-31 0.766044" />
+        <limit lower="0.0" upper="0.261799" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="JAW-6_Revolute-9" type="revolute">
+        <origin xyz="-0.03098187000000003 0.014248210000000015 0.04080951" rpy="1.5707963267948968 -1.9721522630525293e-31 -3.944304526105059e-31" />
+        <parent link="JAW-6" />
+        <child link="JAW-8" />
+        <axis xyz="-0.642788 -4.289186625258633e-31 0.766044" />
+        <limit lower="-0.261799" upper="0.0" effort="1000000" velocity="1000000" />
+    </joint>
+</robot>
