@@ -74,33 +74,8 @@ To analyze the relationship between the robot's joint configurations and its end
 
 ---
 
-## **📁 Repository Structure**
 
-```text
-RobotArm_Portfolio/
-│
-├── CAD/
-│   ├── RobotArm_Master.f3d        # Fusion 360 Master CAD Assembly
-│   ├── Motion_Study_Video.mp4     # 20-second joint animation video
-│   └── Screenshots/               # High-res CAD renders and joint limit setups
-│
-├── ROS2_URDF/
-│   ├── RobotArm.urdf              # Exported ROS 2 URDF model file
-│   └── meshes/                    # Individual link STL mesh files
-│
-├── MATLAB/
-│   ├── fk_6dof_validation.m       # 6-DOF Forward Kinematics analysis script
-│   ├── RobotArm_Simscape.slx      # Auto-generated Simscape Multibody model
-│   └── Workspace_Plot.png         # 3D 6-DOF end-effector position plot
-│
-├── Production_Drawings/
-│   ├── RobotArm_Exploded_BOM.pdf  # 2D Blueprint with exploded view & BOM
-│   └── Base_Link_Drawing.dwg      # AutoCAD / Fusion 2D detail sheet
-│
-└── README.md                      # Project documentation
-```
 
----
 
 ## **💻 How to Run the MATLAB Kinematic Analysis Script**
 
